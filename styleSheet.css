@@ -13,6 +13,9 @@ body {
   -o-user-select: none;
 
 }
+html{
+  overflow: hidden;
+}
 
 th, td {
     border-bottom: 1px solid #ddd;
@@ -79,8 +82,8 @@ button:focus {outline:0;}
 	height: 18px;
   border: 1px;
   border-style: solid;
-  border-color: #2c9f00;
-	background: #2c9f00;
+  border-color: white;
+	background: white;
   border-radius: 15px;
   position: absolute;
   left: 50vw;
@@ -94,6 +97,6 @@ button:focus {outline:0;}
 	height: 18px;
 	border-radius: 50%;
   position: relative;
-	background: #d70134;
+	background: black;
   z-index: 3;
 }
