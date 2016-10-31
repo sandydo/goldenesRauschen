@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+}
+
+* {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  /* Nothing should be selectable*/
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    height: 30px;
+}
+
+.trackWrapper {
+  width: 100vw;
+  position: absolute;
+}
+
+.trackImage {
+  width: 100vw;
+  height: 100vh;
+}
+
+.Track {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+.TrackInfo {
+  width: 100vw;
+  height: 100vh;
+  background-color: blue;
+}
+
+button:focus {outline:0;}
+
+.buttonGraphic {
+  height: 100px;
+}
+.music-button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  z-index: 2;
+}
+
+.PlayPauseButton {
+  position: absolute;
+  left: 50vw;
+  top: 15px;
+  margin-left: -50px;
+
+}
+
+#button-backward {
+  top: 40vh;
+  left: 15px;
+}
+
+
+#button-forward {
+  right: 0;
+  top: 40vh;
+  right: 15px;
+}
+
+
+#timeline{
+	width: 600px;
+	height: 18px;
+  border: 1px;
+  border-style: solid;
+  border-color: #2c9f00;
+	background: #2c9f00;
+  border-radius: 15px;
+  position: absolute;
+  left: 50vw;
+  margin-left: -300px; /* half of width*/
+  bottom: 40px;
+  z-index: 2;
+}
+
+#playhead{
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+  position: relative;
+	background: #d70134;
+  z-index: 3;
+}
