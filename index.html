@@ -1,112 +1,48 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <link rel="stylesheet" href="styleSheet.css" type="text/css"/>
-      <title>Trial And Error Sounds</title>
-    </head>
-    <body onload="init()">
-      <div id="content">
-        <!-- The player interaction -->
-        <button class="music-button" id="button-backward" onclick="backwardClicked();" >
-          <div ><img class="buttonGraphic" src="graphics/backward_button03.svg" alt="Selfhtml" draggable="false"/></div>
-        </button>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styleSheetPreview.css" type="text/css"/>
+    <title>Trial and Error</title>
+  </head>
+  <body>
+    <!-- Image -->
+    <img id="topImage" src="Images/TrialAndErrorBackGround.jpg"/>
+    <!-- Text about the project -->
+    <div id="information">
+      <pre>
+<strong style="font-size:22px">Aufgehorcht!</strong>
 
-        <button class="music-button" id="button-forward" onclick="forwardClicked();" >
-          <div ><img class="buttonGraphic" src="graphics/forward_button03.svg" alt="Selfhtml" draggable="false"/></div>
-        </button>
+Am 11. November präsentiert die im letzten Jahr gegründete Trial & Error Sounds ihr erstes Werk: Goldenes Rauschen. Trial & Error Sounds ist eine Gruppe von Musikern, die sich dem Experimentieren mit neuen Sounds verschrieben haben. Die Bande um Goldenes Rauschen formierte sich im Prozess der <a href="https://www.facebook.com/Nofearnoloathinginnolasvegas/?fref=ts">Theaterproduktion Angst & Schrecken</a>, welche in der Spielzeit 15/16 im Neuen Schauspiel Leipzig mit live eingespielter Musik gezeigt wurde.
 
-        <button class="music-button" onclick="playPauseClicked();" >
-          <div class="PlayPauseButton" id="playButton"><img class="buttonGraphic" src="graphics/play_button03.svg" alt="Selfhtml" draggable="false"/></div>
-          <div class="PlayPauseButton" id="pauseButton" ><img class="buttonGraphic" src="graphics/pause_button03.svg" alt="Selfhtml" draggable="false"/></div>
-        </button>
+In den Kompositionen für Angst & Schrecken hat sich T&E Sounds zum Ziel gesetzt, deutsche Volkslieder aus der Spätromantik in neuem Stil zu interpretieren. Hierbei ist die Schlagrichtung stets, eine gewisse Emotion musikalisch zu transportieren um somit die gewohnten Assoziationen der Volkslieder in neuem Kontext erklingen zu lassen. So untermalte die Musik die Reisen der Schauspieler in halluzinogene Gedankenwelten und die dystopisch-verrückte Welt von Angst & Schrecken, welches von H.S. Thompsons Fear and Loathing in Las Vegas inspiriert wurde.
+Die beteiligten MusikerInnen sind natürlich außerhalb der Theaterproduktion ganz und gar nicht untätig und werden euch anlässlich des Record Release ordentlich was auf die Ohren geben. Ganze drei Bands und eine Djane spielen zum Tanz auf, deswegen kommt und lauscht:
 
-        <div id="timeline">
-  	        <div id="playhead"></div>
-        </div>
+<!--
+<strong>CLASHING SEATS</strong> ( Experimental Folk// Melancholic Jazz)
+<strong>MAD ILL ROYS</strong> (60's // Garage // Psych)
+<strong>FABIAN</strong> (Ambivalent Pop)
+<strong>AMPULLENCOCKTAIL</strong> (Indie // Indietronics // Querbeat)
+-->
+<strong>CLASHING SEATS</strong>
+Clashing Seats werden den Abend mit einer Mischung aus
+Experimental Folk und Melancholic Jazz eröffnen. Thomas ist der musikalische Leiter der Angst & Schrecken-Produktion und schrieb sämtliche Arrangements der Stücke. Nun tritt er unterstützt von Schlagzeug und Bass selbst hinter Gitarre und Mikrophon und balsamiert mit eure Gehörgänge.
 
-        <!-- The Track divs-->
-        <!--Intro-->
-        <div class="trackWrapper">
-          <audio id="track0">
-            <source src="mp3/track0.mp3" type="audio/mpeg">
-          </audio>
-          <img class="trackImage" src="Images/DSC_0910.JPG" >
-        </div>
+<strong>MAD ILL ROYS</strong>
+Die vier Jungs aus den Straßen des wilden Westens von Leipzig beschlossen in diesem Jahr eine Band zu gründen und rocken sich seitdem durch die Undergroundszene. Ihr Style ist geprägt durch wilde Gitarrensolos, voranstürmende Grooves, hypnotisch-psychedelische Klangteppichpassagen und wurde insbesondere inspiriert von den Klangwelten 60er und 70er Garagenbands mit viel Freiraum für verrückte und facettenreiche Improvisationen. Die Songs handeln von den schönen und hässlichen Gesichtern der Liebe, vom Schwarzfahren und ganz besonders vom Rock n' Roll. Der Bandname beruht auf der Legende des irischen Missionars McIllroy, dessen Tätigkeit im Urwald angeblich nach hinten losging und der, zurück in der Heimat, trommelnd, die Lehren„der Wilden“ predigend, unter dem Namen "Mad ill Roy" bekannt geworden sein soll ... Hokuspokushalluzinatophamborium hin oder her ... den vier Jungs von den MAD ILL ROYS gehts nur um eins: die Sch*@#+ zu rocken!
+<a href="https://www.facebook.com/MAD-ILL-ROYS-1074822512587765/">Facebook</a>
 
-        <!--Übern See-->
-        <div class="trackWrapper">
-          <audio id="track1">
-            <source src="mp3/track1.mp3" type="audio/mpeg">
-          </audio>
-          <img class="trackImage" src="Images/DSC_0947.JPG" >
-        </div>
+<strong>FABIAN</strong>
+Es ist nun ein Jahr her, dass die Band Fabian ihr gleichnamiges Album veröffentlicht hat. Es lässt sich nicht in Genre-Schubladen pressen und wirkt durch die Kombination von Post-Punk, schleppenden Beats und einer Phasenhaftigkeit wundervoll laut. Produziert wurde das Album von „Die Nerven“- Gitarrist Max Rieger veröffentlicht unter dem Stuttgarter Label „Treibender Teppich Records“.Die Band um Sängerin Vitiko verwandelt pulsierende Texturen in präzise Rhythmen und spielt sich dabei durch unterschiedlichste musikalische Stilistiken. Wohlklingende Melodiebögen werden auf nahezu ironische Art und Weise gebrochen und tauchen fast unbemerkt in einem neuen musikalischen Kontext wieder auf.
+<a href="https://fabian6668.bandcamp.com/">Bandcamp</a>
+<a href="https://www.facebook.com/fabianmusikcom/">Facebook</a>
 
-        <!--Alle Vögel-->
-        <div class="trackWrapper">
-          <audio id="track2">
-            <source src="mp3/track2.mp3" type="audio/mpeg">
-          </audio>
-          <img class="trackImage" src="Images/DSC_0952.JPG" >
-        </div>
+<strong>AMPULLENCOCKTAIL</strong>
+Die heißen scheiben zum in die Ohren reiben! Mehr muss dazu nicht gesagt werden.
 
-        <!--Noizeshit 1-->
-        <div class="trackWrapper">
-          <audio id="track3">
-            <source src="mp3/track3.mp3" type="audio/mpeg">
-          </audio>
-          <img class="trackImage" src="Images/DSC_0968.JPG" >
-        </div>
-
-        <!--Häschen-->
-        <div class="trackWrapper">
-          <audio id="track4">
-            <source src="mp3/track4.mp3" type="audio/mpeg">
-          </audio>
-          <img class="trackImage" src="Images/DSC_0971.JPG" >
-        </div>
-
-
-
-          <!--
-          <div class="Track">
-
-          </div>
-        -->
-          <!--
-          <div class="TrackInfo">
-            <table>
-              <tr>
-                <td> <strong> Title: </strong> </td>
-                <td> Alle V&ouml;gel</td>
-              </tr>
-              <tr>
-                <td> <strong> Musik: </strong> </td>
-                <td> Unbekannt </td>
-              </tr>
-              <tr>
-                  <td> <strong> Text: </strong> </td>
-                  <td> August Heinrich Hoffmann von Fallersleben </td>
-              </tr>
-              <tr>
-                <td> <strong> Erscheinungsjahr: </strong> </td>
-                <td> 1835 </td>
-              </tr>
-              <tr>
-                <td> <strong> Neuarrangiert: </strong> </td>
-                <td> Thomas Schnake </td>
-              </tr>
-              <tr>
-                <td> <strong> Interpretiert: </strong> </td>
-                <td> Gitarre: Bla bla </td>
-              </tr>
-            </table>
-          </div>
-        -->
-
-      </div>
-    </body>
-    <script type="text/javascript" src="controlPageInteraction.js"></script>
-    <script src="snap.js"></script>
-
-  </html>
+Los geht’s um 22 Uhr, Eintritt 5 – 8 €. Kommt zahlreich, bringt Freunde, Nachbarn, heimliche Verehrer und Oma mit. Es ist genug Platz für alle.
+*******************************************
+      </pre>
+    </div>
+  </body>
+</html>
