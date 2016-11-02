@@ -6,7 +6,22 @@
       <title>Trial And Error Sounds</title>
     </head>
     <body onload="init()">
+      
+      <div class="snapper-content">
+        <div >
+          <h3>Trial and Snap</h3>
+            <ul>
+              <li>
+                <a href="possibleLink.html">A Link</a>
+              </li>
+            </ul>
+        </div>
+      </div>
       <div id="content">
+        <!-- The Menue -->
+        <button id="menuButton" onclick="menuButtonClicked();">
+          <div><img id="menuButtonGraphic" src="graphics/menu_button.svg" alt="Selfhtml" draggable="false" /></div>
+        </button>
         <!-- The player interaction -->
         <button class="music-button" id="button-backward" onclick="backwardClicked();" >
           <div ><img class="buttonGraphic" src="graphics/backward_button03.svg" alt="Selfhtml" draggable="false"/></div>

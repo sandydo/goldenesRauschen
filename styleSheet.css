@@ -21,6 +21,34 @@ th, td {
     border-bottom: 1px solid #ddd;
     height: 30px;
 }
+#content {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+#menuButton {
+  position: absolute; /* Upper left corner*/
+  z-index: 2;
+  background-color: transparent;
+  border: none;
+}
+
+#menuButtonGraphic {
+  width: 70px;
+  opacity: 0.6;
+}
+
+.snapper-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: grey;
+}
 
 .trackWrapper {
   width: 100vw;
@@ -89,7 +117,7 @@ button:focus {outline:0;}
   left: 50vw;
   margin-left: -300px; /* half of width*/
   bottom: 40px;
-  z-index: 2;
+  z-index: 4;
 }
 
 #playhead{
@@ -98,5 +126,5 @@ button:focus {outline:0;}
 	border-radius: 50%;
   position: relative;
 	background: black;
-  z-index: 3;
+  z-index: 5;
 }

@@ -29,6 +29,7 @@ function init(){
   // initialisation of duration.
   // initialisation of currTrack.
 
+  // The info menu.
   infosnapper = new Snap({
   element: document.getElementById('content')
   });
@@ -216,4 +217,9 @@ function moveplayhead(e){
   if(newMargLeft > (timelineWidth - playheadWidth)){
     playhead.style.marginLeft = (timelineWidth -playheadWidth) + "px";
   }
+}
+
+///////////////////
+function menuButtonClicked(){
+  infosnapper.open('left');
 }
