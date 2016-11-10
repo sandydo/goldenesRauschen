@@ -85,6 +85,10 @@ a {
   width: 100vw;
 }
 
+#previewLayer {
+  background-color: black;
+}
+
 .temporalLayer button {
   position: absolute;
   right: 4vw;

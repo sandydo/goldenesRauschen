@@ -8,6 +8,14 @@
     </head>
     <body onload="init()">
 
+      <div class="temporalLayer" id="previewLayer">
+        <button onclick="makeTempLayerInvisible('previewLayer')">
+          <!-- <img id="XofPreviewImageGraphic" src="graphics/xButton.svg" alt="Selfhtml" draggable="false"/> -->
+          <h3 style="color:white; font-size: 2em;">Enter</h3>
+        </button>
+        <img id="previewImage" src="Images/TrialAndErrorBackGround.jpg">
+      </div>
+
       <div class="snapper-content">
         <div >
           <img src="Images/TrialErrorLogo.png" id="trialErrorLogo" />
@@ -30,13 +38,7 @@
           <div><img id="menuButtonGraphic" src="graphics/menu_button.svg" alt="Selfhtml" draggable="false"/></div>
         </button>
 
-        <div class="temporalLayer" id="previewLayer">
-          <button onclick="makeTempLayerInvisible('previewLayer')">
-            <!-- <img id="XofPreviewImageGraphic" src="graphics/xButton.svg" alt="Selfhtml" draggable="false"/> -->
-            <h3 style="color:white; font-size: 2em;">Enter</h3>
-          </button>
-          <img id="previewImage" src="Images/TrialAndErrorBackGround.jpg">
-        </div>
+
 <!--
         <div class="temporalLayer" id="contactLayer">
           <button onclick="makeTempLayerInvisible('contactLayer')">
