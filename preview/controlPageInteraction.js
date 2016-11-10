@@ -24,6 +24,10 @@ var paused = true;
 
 
 function init(){
+
+  //document.addEventListener("DOMContentLoaded", function() {
+  //  document.getElementById("aBlackCurtain").style.visibility = 'hidden';
+  //});
   // Is called onload of body.
   playheadDragged = false;
   currTrackNum = 0;
@@ -42,6 +46,8 @@ function init(){
   showPlayPauseButton();
   updateCurrentTrack();
 
+  document.getElementById('temporalContactLayer').style.visibility = 'hidden';
+  document.getElementById('temporalInfoLayer').style.visibility = 'hidden';
   // Event listener:
   playhead.addEventListener("mousedown", function () { playheadDragged = true;}, false );
   document.addEventListener("mousemove", function(event) { if(playheadDragged) {moveplayhead(event);} }, false);
@@ -237,12 +243,6 @@ function makeTempLayerInvisible(id){
   document.getElementById(id).style.visibility = 'hidden';
 }
 
-
-function openContacts(){
- // append a tranparent div like the temporalLayer
- $('body').append('<div id="test"><div>');
-}
-
-function openInfo(){
-  // append a tranparent div like the temporalLayer
+function openTemporalLaywer(id){
+   document.getElementById(id).style.visibility = 'visible';
 }

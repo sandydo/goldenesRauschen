@@ -8,23 +8,24 @@
     </head>
     <body onload="init()">
 
-      <div class="temporalLayer" id="previewLayer">
+      <div class="previewLayer" id="previewLayer">
         <button onclick="makeTempLayerInvisible('previewLayer')">
           <!-- <img id="XofPreviewImageGraphic" src="graphics/xButton.svg" alt="Selfhtml" draggable="false"/> -->
           <h3 style="color:white; font-size: 2em;">Enter</h3>
         </button>
         <img id="previewImage" src="Images/TrialAndErrorBackGround.jpg">
       </div>
+      <!--<div id="aBlackCurtain"></div>-->
 
       <div class="snapper-content">
         <div >
           <img src="Images/TrialErrorLogo.png" id="trialErrorLogo" />
             <ul>
               <li>
-                <a href="#" onclick="openInfo(); return false;">Info</a>
+                <a href="#" onclick="openTemporalLaywer('temporalInfoLayer'); return false;">Info</a>
               </li>
               <li>
-                <a href="#" onclick="openContacts(); return false;">Kontakte</a>
+                <a href="#" onclick="openTemporalLaywer('temporalContactLayer'); return false;">Kontakte</a>
               </li>
               <li>
                 <a href="https://www.dropbox.com/sh/odev43wqxpp8vag/AAAqpnfQ8hrMgTUp_m2USW0ya?dl=0">Downloads</a>
@@ -32,82 +33,170 @@
             </ul>
         </div>
       </div>
+
+      <div class="temporalLayer" id="temporalInfoLayer">
+        <button onclick="makeTempLayerInvisible('temporalInfoLayer')">
+          <img id="XbuttonGraphic" src="graphics/xButton.svg" alt="Selfhtml" draggable="false"/>
+        </button>
+      <div class="container">
+        <div class="scrollContainer">
+          <div class="content">
+            <h3 style="color:white;">Info</h3>
+            <p>
+              Trial & Error Sounds ist eine Gruppe von Musikern,
+              die sich dem Experimentieren mit neuen Sounds verschrieben
+              haben. Die Bande um Goldenes Rauschen formierte sich im Prozess
+              der Theaterproduktion Angst & Schrecken, welche in der
+              Spielzeit 15/16 im Neuen Schauspiel Leipzig mit live eingespielter
+              Musik gezeigt wurde(<a href="https://www.facebook.com/Nofearnoloathinginnolasvegas/?fref=ts">A&S @ Facebook). <br>
+              In den Kompositionen für Angst & Schrecken hat sich T&E Sounds zum Ziel gesetzt, deutsche Volkslieder
+              aus der Spätromantik in neuem Stil zu interpretieren. Hierbei ist die Schlagrichtung stets,
+               eine gewisse Emotion musikalisch zu transportieren um somit die gewohnten Assoziationen
+               der Volkslieder in neuem Kontext erklingen zu lassen. So untermalte die Musik die Reisen der
+               Schauspieler in halluzinogene Gedankenwelten und die dystopisch-verrückte Welt von
+               Angst & Schrecken, welches von H.S. Thompsons Fear and Loathing in Las Vegas inspiriert wurde.
+            </p>
+
+            <p>
+                Im Juli 2016 durften die Trial & Error Sounds ihre Aufnahmen in Korrespondenz
+              mit der <a href="http://www.htwk-leipzig.de/de/">HTWK Leipzig</a>
+              aufnehmen und präsentierte am 11.11. 2016 ihre Platte "Goldenes Rauschen".
+              Hier hat
+            </p>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+
+      <div class="temporalLayer" id="temporalContactLayer">
+      <button onclick="makeTempLayerInvisible('temporalContactLayer')">
+        <img id="XbuttonGraphic" src="graphics/xButton.svg" alt="Selfhtml" draggable="false"/>
+      </button>
+
+      <div class="container">
+        <div class="scrollContainer">
+          <div class="content">
+            <table>
+              <!-- Thomas -->
+              <tr>
+                <td rowspan="3"></td>
+                <td><strong>Thomas Schnake</strong></td>
+              </tr>
+              <tr>
+                <td><i>Produktionsleitung und Arragments</i></td>
+              </tr>
+              <tr class="spaceUnder">
+                <td><a href="mailto:t.schnake@gmail.com">Email: t.schnake@gmail.com</a></td>
+              </tr>
+              <!-- Anne -->
+              <tr>
+                <td rowspan="3"></td>
+                <td><strong>Anne Jahnke</strong></td>
+              </tr>
+              <tr>
+                <td><i>Aufnahme und Postproduktion <br>(mit freundlicher Unterstützung der HTWK Leipzig)</i></td>
+              </tr>
+              <tr class="spaceUnder">
+                <td><a href="www.linkedin.com/in/anne-jahnke">@linkedin</td>
+              </tr>
+              <!-- Falko-->
+              <tr>
+                <td rowspan="3"></td>
+                <td><strong>Ánthro Poi</strong></td>
+              </tr>
+              <tr>
+                <td><i>Bass, Gitarre</i></td>
+              </tr>
+              <tr class="spaceUnder">
+                <td><a href="mailto:falko.ruedrich@hotmail.de">Email: falko.ruedrich@hotmail.de</a></td>
+              </tr>
+
+              <!-- Torben-->
+              <tr>
+                <td rowspan="3"></td>
+                <td><strong>Torben Jaeckel</strong></td>
+              </tr>
+              <tr>
+                <td><i>Drums und gute Laune</i></td>
+              </tr>
+              <tr class="spaceUnder">
+                <td><a href="mailto:torben.jaeckel@me.com">Email: torben.jaeckel@me.com</a></td>
+              </tr>
+              <!-- Georg -->
+              <tr>
+                <td rowspan="2"></td>
+                <td><strong>Gerog Fleischfresser</strong></td>
+              </tr>
+              <tr class="spaceUnder">
+                <td><i>Piano, Saxophon</i></td>
+              </tr>
+
+              <!--ben-->
+              <tr>
+                <td rowspan="3"></td>
+                <td><strong>Ben Rouka</strong></td>
+              </tr>
+              <tr>
+                <td><i>Percussion</i></td>
+              </tr>
+              <tr class="spaceUnder">
+                <td><a href="mailto:benrouka@hotmail.com">Email: benrouka@hotmail.com</a>,<br> <a href="https://www.facebook.com/ben.rouka">Facebook</a></td>
+              </tr>
+              <!-- Marie -->
+              <tr>
+                <td rowspan="3"></td>
+                <td><strong>Marie Bergel</strong></td>
+              </tr>
+              <tr>
+                <td><i>Gesang/Chor (Solo:Mond)</i></td>
+              </tr>
+              <tr class="spaceUnder">
+                <td><a href="mailto:marie.bergel@googlemail.com">Email: marie.bergel@googlemail.com</a></td>
+              </tr>
+              <!-- Hendrik -->
+              <tr>
+                <td rowspan="2"></td>
+                <td><strong>Hendrik Brause</strong></td>
+              </tr>
+              <tr class="spaceUnder">
+                <td><i>Gesang</i></td>
+              </tr>
+              <!-- Marie -->
+              <tr>
+                <td rowspan="3"></td>
+                <td><strong>Friederike Biebl</strong></td>
+              </tr>
+              <tr>
+                <td><i>Gesang</i></td>
+              </tr>
+              <tr class="spaceUnder">
+                <td><a href="mailto:fbiebl@gmail.com">Email: fbiebl@gmail.com</a>, <br> <a href="https://www.instagram.com/f2theb/">Instagram</a></td>
+              </tr>
+              <!-- Karl -->
+              <tr>
+                <td rowspan="2"></td>
+                <td><strong>Karl Schlinger</strong></td>
+              </tr>
+              <tr class="spaceUnder">
+                <td><i>Gesang</i></td>
+              </tr>
+
+            </table>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+
       <div id="content">
         <!-- The Menue -->
         <button id="menuButton" onclick="menuButtonClicked();">
           <div><img id="menuButtonGraphic" src="graphics/menu_button.svg" alt="Selfhtml" draggable="false"/></div>
         </button>
 
-
-<!--
-        <div class="temporalLayer" id="contactLayer">
-          <button onclick="makeTempLayerInvisible('contactLayer')">
-            <img id="XbuttonGraphic" src="graphics/xButton.svg" alt="Selfhtml" draggable="false"/>
-          </button>
-          <div class="infoWindow">
-            <div class="contactInfo">
-
-              <p size="3em">Beteiligte Personen</p>
-              <table>
-            <tr>
-                  <td><strong style="z-index:400; color: white;">Thomas Schnake</strong></td>
-            </tr>
-            <tr>
-              <td><i>Produktionsleitung und Arrangements</i></td>
-            </tr>
-            <tr>
-              <td>t.schnake@gmail.com<td>
-            </tr>
-            <tr>
-              <td><strong>Anne Jahnke</strong></td>
-            </tr>
-            <tr>
-              <td><i>Aufnahme und Postproduktion</i></td>
-            </tr>
-            <tr>
-              <td><a href="www.linkedin.com/in/anne-jahnke">@linkedin<td>
-            </tr>
-            <tr>
-              <td><strong style="z-index:400; color: white;">Thomas Schnake</strong></td>
-            </tr>
-            <tr>
-              <td><i>Produktionsleitung und Arrangements</i></td>
-            </tr>
-            <tr>
-              <td>t.schnake@gmail.com<td>
-            </tr>
-            <tr>
-              <td><strong>Anne Jahnke</strong></td>
-            </tr>
-            <tr>
-              <td><i>Aufnahme und Postproduktion</i></td>
-            </tr>
-            <tr>
-              <td><a href="www.linkedin.com/in/anne-jahnke">linkedin<td>
-            </tr>
-            <tr>
-              <td><strong style="z-index:400; color: white;">Thomas Schnake</strong></td>
-            </tr>
-            <tr>
-              <td><i>Produktionsleitung und Arrangements</i></td>
-            </tr>
-            <tr>
-              <td>t.schnake@gmail.com<td>
-            </tr>
-            <tr>
-              <td><strong>Anne Jahnke</strong></td>
-            </tr>
-            <tr>
-              <td><i>Aufnahme und Postproduktion</i></td>
-            </tr>
-            <tr>
-              <td><a href="www.linkedin.com/in/anne-jahnke">linkedin<td>
-            </tr>
-            </table>
-            </div>
-          </div>
-        </div>
--->
         <!-- The player interaction -->
         <button class="music-button" id="button-backward" onclick="backwardClicked();" >
           <div ><img class="playerButtonGraphic" src="graphics/backward_button03.svg" alt="Selfhtml" draggable="false"/></div>
