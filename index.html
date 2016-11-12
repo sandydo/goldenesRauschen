@@ -1,48 +1,317 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styleSheetPreview.css" type="text/css"/>
-    <title>Trial and Error</title>
-  </head>
-  <body>
-    <!-- Image -->
-    <img id="topImage" src="Images/TrialAndErrorBackGround.jpg"/>
-    <!-- Text about the project -->
-    <div id="information">
-      <pre>
-<strong style="font-size:22px">Aufgehorcht!</strong>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="styleSheet.css" type="text/css"/>
+      <link rel="icon" href="graphics/icon.png" type="image/png" >
+      <title>Trial And Error Sounds</title>
+    </head>
+    <body onload="init()">
 
-Am 11. November präsentiert die im letzten Jahr gegründete Trial & Error Sounds ihr erstes Werk: Goldenes Rauschen. Trial & Error Sounds ist eine Gruppe von Musikern, die sich dem Experimentieren mit neuen Sounds verschrieben haben. Die Bande um Goldenes Rauschen formierte sich im Prozess der <a href="https://www.facebook.com/Nofearnoloathinginnolasvegas/?fref=ts">Theaterproduktion Angst & Schrecken</a>, welche in der Spielzeit 15/16 im Neuen Schauspiel Leipzig mit live eingespielter Musik gezeigt wurde.
+      <div class="previewLayer" id="previewLayer">
+        <button onclick="makeTempLayerInvisible('previewLayer')">
+          <!-- <img id="XofPreviewImageGraphic" src="graphics/xButton.svg" alt="Selfhtml" draggable="false"/> -->
+          <h3 style="color:white; font-size: 3em;">Enter</h3>
+        </button>
+        <img id="previewImage" src="Images/TrialAndErrorBackGround.jpg">
+      </div>
+      <!--<div id="aBlackCurtain"></div>-->
 
-In den Kompositionen für Angst & Schrecken hat sich T&E Sounds zum Ziel gesetzt, deutsche Volkslieder aus der Spätromantik in neuem Stil zu interpretieren. Hierbei ist die Schlagrichtung stets, eine gewisse Emotion musikalisch zu transportieren um somit die gewohnten Assoziationen der Volkslieder in neuem Kontext erklingen zu lassen. So untermalte die Musik die Reisen der Schauspieler in halluzinogene Gedankenwelten und die dystopisch-verrückte Welt von Angst & Schrecken, welches von H.S. Thompsons Fear and Loathing in Las Vegas inspiriert wurde.
-Die beteiligten MusikerInnen sind natürlich außerhalb der Theaterproduktion ganz und gar nicht untätig und werden euch anlässlich des Record Release ordentlich was auf die Ohren geben. Ganze drei Bands und eine Djane spielen zum Tanz auf, deswegen kommt und lauscht:
+      <div class="snapper-content">
+        <div>
+          <img src="Images/TrialErrorLogo.png" id="trialErrorLogo" />
+            <ul>
+              <li>
+                <a href="#" style="color:white;" onclick="openTemporalLaywer('temporalInfoLayer'); return false;">Info</a>
+              </li>
+              <li>
+                <a href="#" style="color:white;" onclick="openTemporalLaywer('temporalContactLayer'); return false;">Kontakte</a>
+              </li>
+              <li>
+                <a style="color:white;" href="https://www.dropbox.com/sh/odev43wqxpp8vag/AAAqpnfQ8hrMgTUp_m2USW0ya?dl=0">Downloads</a>
+              </li>
+            </ul>
+        </div>
+      </div>
 
-<!--
-<strong>CLASHING SEATS</strong> ( Experimental Folk// Melancholic Jazz)
-<strong>MAD ILL ROYS</strong> (60's // Garage // Psych)
-<strong>FABIAN</strong> (Ambivalent Pop)
-<strong>AMPULLENCOCKTAIL</strong> (Indie // Indietronics // Querbeat)
--->
-<strong>CLASHING SEATS</strong>
-Clashing Seats werden den Abend mit einer Mischung aus
-Experimental Folk und Melancholic Jazz eröffnen. Thomas ist der musikalische Leiter der Angst & Schrecken-Produktion und schrieb sämtliche Arrangements der Stücke. Nun tritt er unterstützt von Schlagzeug und Bass selbst hinter Gitarre und Mikrophon und balsamiert mit eure Gehörgänge.
+      <div class="temporalLayer" id="temporalInfoLayer" visibility="hidden">
+        <button onclick="makeTempLayerInvisible('temporalInfoLayer')">
+          <img id="XbuttonGraphic" src="graphics/xButton.svg" alt="Selfhtml" draggable="false"/>
+        </button>
+      <div class="container">
+        <div class="scrollContainer">
+          <div class="content">
+            <h3 style="color:white;font-size:1em;"><strong>Das Projekt</strong></h3>
+            <p>
+              Trial & Error Sounds ist eine Gruppe von Musikern aus Leipzig und Berlin,
+              die sich dem Experimentieren mit neuen Sounds verschrieben
+              haben. Die Bande formierte sich im Prozess
+              der <a href="https://www.facebook.com/Nofearnoloathinginnolasvegas/?fref=ts">Theaterproduktion Angst & Schrecken</a>, welche in der
+              Spielzeit 15/16 im <a href="http://www.neues-schauspiel-leipzig.de">Neuen Schauspiel Leipzig</a> mit live eingespielter
+              Musik gezeigt wurde. Hierbei wurden deutsche Volkslieder aus der Spätromantik
+              so arrangiert und interpretiert, dass stehts eine Emotion musikalisch
+              transportiert wird um den Zuschauer im Theater an die Szenerie heranzuführen.
+            </p>
+            <h3 style="color:white;font-size:1em;"><strong>Die Musik</strong></h3>
+            <p>
+              Im Juli 2016 durften die Trial & Error Sounds ihre Volkslieder in Korrespondenz
+              mit der  <a href="http://www.htwk-leipzig.de/de/">HTWK Leipzig</a>
+              aufnehmen und stellt am 11.11. 2016 ihre Platte "Goldenes Rauschen" im Neuen Schauspiel Leipzig vor.
+              Goldenes Rauschen präsentiert deutsche Voklslieder in neuem Stil, bei dem
+              die gewohnten Assoziationen der bekannten Lieder gebrochen werden sollen um
+              die romantischen Klänge in neuem Stil zu erfahren.
+            </p>
+          </div>
+        </div>
+      </div>
 
-<strong>MAD ILL ROYS</strong>
-Die vier Jungs aus den Straßen des wilden Westens von Leipzig beschlossen in diesem Jahr eine Band zu gründen und rocken sich seitdem durch die Undergroundszene. Ihr Style ist geprägt durch wilde Gitarrensolos, voranstürmende Grooves, hypnotisch-psychedelische Klangteppichpassagen und wurde insbesondere inspiriert von den Klangwelten 60er und 70er Garagenbands mit viel Freiraum für verrückte und facettenreiche Improvisationen. Die Songs handeln von den schönen und hässlichen Gesichtern der Liebe, vom Schwarzfahren und ganz besonders vom Rock n' Roll. Der Bandname beruht auf der Legende des irischen Missionars McIllroy, dessen Tätigkeit im Urwald angeblich nach hinten losging und der, zurück in der Heimat, trommelnd, die Lehren„der Wilden“ predigend, unter dem Namen "Mad ill Roy" bekannt geworden sein soll ... Hokuspokushalluzinatophamborium hin oder her ... den vier Jungs von den MAD ILL ROYS gehts nur um eins: die Sch*@#+ zu rocken!
-<a href="https://www.facebook.com/MAD-ILL-ROYS-1074822512587765/">Facebook</a>
+      </div>
 
-<strong>FABIAN</strong>
-Es ist nun ein Jahr her, dass die Band Fabian ihr gleichnamiges Album veröffentlicht hat. Es lässt sich nicht in Genre-Schubladen pressen und wirkt durch die Kombination von Post-Punk, schleppenden Beats und einer Phasenhaftigkeit wundervoll laut. Produziert wurde das Album von „Die Nerven“- Gitarrist Max Rieger veröffentlicht unter dem Stuttgarter Label „Treibender Teppich Records“.Die Band um Sängerin Vitiko verwandelt pulsierende Texturen in präzise Rhythmen und spielt sich dabei durch unterschiedlichste musikalische Stilistiken. Wohlklingende Melodiebögen werden auf nahezu ironische Art und Weise gebrochen und tauchen fast unbemerkt in einem neuen musikalischen Kontext wieder auf.
-<a href="https://fabian6668.bandcamp.com/">Bandcamp</a>
-<a href="https://www.facebook.com/fabianmusikcom/">Facebook</a>
 
-<strong>AMPULLENCOCKTAIL</strong>
-Die heißen scheiben zum in die Ohren reiben! Mehr muss dazu nicht gesagt werden.
+      <div class="temporalLayer" id="temporalContactLayer" visibility="hidden">
+      <button onclick="makeTempLayerInvisible('temporalContactLayer')">
+        <img id="XbuttonGraphic" src="graphics/xButton.svg" alt="Selfhtml" draggable="false"/>
+      </button>
 
-Los geht’s um 22 Uhr, Eintritt 5 – 8 €. Kommt zahlreich, bringt Freunde, Nachbarn, heimliche Verehrer und Oma mit. Es ist genug Platz für alle.
-*******************************************
-      </pre>
-    </div>
-  </body>
-</html>
+      <div class="container">
+        <div class="scrollContainer">
+          <div class="content">
+            <table>
+              <!-- Thomas -->
+              <tr>
+                <td rowspan="3"></td>
+                <td><strong>Thomas Schnake</strong></td>
+              </tr>
+              <tr>
+                <td><i>Produktionsleitung und Arragments</i></td>
+              </tr>
+              <tr class="spaceUnder">
+                <td><a href="mailto:t.schnake@gmail.com">Email: t.schnake@gmail.com</a></td>
+              </tr>
+              <!-- Anne -->
+              <tr>
+                <td rowspan="3"></td>
+                <td><strong>Anne Jahnke</strong></td>
+              </tr>
+              <tr>
+                <td><i>Aufnahme und Postproduktion <br>(mit freundlicher Unterstützung der HTWK Leipzig)</i></td>
+              </tr>
+              <tr class="spaceUnder">
+                <td><a href="www.linkedin.com/in/anne-jahnke">@linkedin</td>
+              </tr>
+              <!-- Falko-->
+              <tr>
+                <td rowspan="3"></td>
+                <td><strong>Ánthro Poi</strong></td>
+              </tr>
+              <tr>
+                <td><i>Bass, Gitarre</i></td>
+              </tr>
+              <tr class="spaceUnder">
+                <td><a href="mailto:falko.ruedrich@hotmail.de">Email: falko.ruedrich@hotmail.de</a></td>
+              </tr>
+
+              <!-- Torben-->
+              <tr>
+                <td rowspan="3"></td>
+                <td><strong>Torben Jaeckel</strong></td>
+              </tr>
+              <tr>
+                <td><i>Drums und gute Laune</i></td>
+              </tr>
+              <tr class="spaceUnder">
+                <td><a href="mailto:torben.jaeckel@me.com">Email: torben.jaeckel@me.com</a></td>
+              </tr>
+              <!-- Georg -->
+              <tr>
+                <td rowspan="2"></td>
+                <td><strong>Gerog Fleischfresser</strong></td>
+              </tr>
+              <tr class="spaceUnder">
+                <td><i>Piano, Saxophon</i></td>
+              </tr>
+
+              <!--ben-->
+              <tr>
+                <td rowspan="3"></td>
+                <td><strong>Ben Rouka</strong></td>
+              </tr>
+              <tr>
+                <td><i>Percussion</i></td>
+              </tr>
+              <tr class="spaceUnder">
+                <td><a href="mailto:benrouka@hotmail.com">Email: benrouka@hotmail.com</a>,<br> <a href="https://www.facebook.com/ben.rouka">Facebook</a></td>
+              </tr>
+              <!-- Marie -->
+              <tr>
+                <td rowspan="3"></td>
+                <td><strong>Marie Bergel</strong></td>
+              </tr>
+              <tr>
+                <td><i>Gesang/Chor (Solo:Mond)</i></td>
+              </tr>
+              <tr class="spaceUnder">
+                <td><a href="mailto:marie.bergel@googlemail.com">Email: marie.bergel@googlemail.com</a></td>
+              </tr>
+              <!-- Hendrik -->
+              <tr>
+                <td rowspan="2"></td>
+                <td><strong>Hendrik Brause</strong></td>
+              </tr>
+              <tr class="spaceUnder">
+                <td><i>Gesang</i></td>
+              </tr>
+              <!-- Marie -->
+              <tr>
+                <td rowspan="3"></td>
+                <td><strong>Friederike Biebl</strong></td>
+              </tr>
+              <tr>
+                <td><i>Gesang</i></td>
+              </tr>
+              <tr class="spaceUnder">
+                <td><a href="mailto:fbiebl@gmail.com">Email: fbiebl@gmail.com</a>, <br> <a href="https://www.instagram.com/f2theb/">Instagram</a></td>
+              </tr>
+              <!-- Karl -->
+              <tr>
+                <td rowspan="2"></td>
+                <td><strong>Karl Schlinger</strong></td>
+              </tr>
+              <tr class="spaceUnder">
+                <td><i>Gesang</i></td>
+              </tr>
+
+            </table>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+
+      <div id="content">
+        <!-- The Menue -->
+        <button id="menuButton" onclick="menuButtonClicked();">
+          <div><img id="menuButtonGraphic" src="graphics/menu_button.svg" alt="Selfhtml" draggable="false"/></div>
+        </button>
+
+        <!-- The player interaction -->
+        <button class="music-button" id="button-backward" onclick="backwardClicked();" >
+          <div ><img class="playerButtonGraphic" src="graphics/backward_button03.svg" alt="Selfhtml" draggable="false"/></div>
+        </button>
+
+        <button class="music-button" id="button-forward" onclick="forwardClicked();" >
+          <div><img class="playerButtonGraphic" src="graphics/forward_button03.svg" alt="Selfhtml" draggable="false"/></div>
+        </button>
+
+        <button class="music-button" onclick="playPauseClicked();" >
+          <div class="PlayPauseButton" id="playButton"><img class="playerButtonGraphic" src="graphics/play_button03.svg" alt="Selfhtml" draggable="false"/></div>
+          <div class="PlayPauseButton" id="pauseButton" ><img class="playerButtonGraphic" src="graphics/pause_button03.svg" alt="Selfhtml" draggable="false"/></div>
+        </button>
+
+        <div id="timeline">
+  	        <div id="playhead"></div>
+        </div>
+
+        <!-- The Track divs-->
+        <!-- Intro
+        <div class="trackWrapper">
+          <audio id="track0">
+            <source src="mp3/track0.mp3" type="audio/mpeg">
+            <source src="ogg/track0.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+          </audio>
+          <img class="trackImage" src="Images/Intro.jpg" >
+          <p class="trackTitle">Intro</p>
+        </div> -->
+
+        <!--Übern See
+        <div class="trackWrapper">
+          <audio id="track0">
+            <source src="mp3/track0.mp3" type="audio/mpeg">
+            <source src="ogg/track0.ogg" type="audio/ogg">
+              Your browser does not support the audio element.
+          </audio>
+          <img class="trackImage" src="Images/übernsee.jpg" >
+          <p class="trackTitle">Übern See</p>
+        </div> -->
+
+        <!--Alle Vögel-->
+        <div class="trackWrapper">
+          <audio id="track0">
+            <source src="mp3/AlleVögel.mp3" type="audio/mpeg">
+            <source src="ogg/AlleVögel.ogg" type="audio/ogg">
+              Your browser does not support the audio element.
+          </audio>
+          <img class="trackImage" src="Images/AlleVögel.jpg" >
+          <p class="trackTitle">Alle Vögel</p>
+        </div>
+
+        <!--Noizeshit 1
+        <div class="trackWrapper">
+          <audio id="track3">
+            <source src="mp3/track2.mp3" type="audio/mpeg">
+          </audio>
+          <img class="trackImage" src="Images/GR1.jpg" >
+          <p class="trackTitle">Goldenes Rauschen 1</p>
+        </div> -->
+
+        <!--Häschen-->
+        <div class="trackWrapper">
+          <audio id="track1">
+            <source src="mp3/Häschen.mp3" type="audio/mpeg">
+            <source src="ogg/Häschen.ogg" type="audio/ogg">
+              Your browser does not support the audio element.
+          </audio>
+          <img class="trackImage" src="Images/häschen.jpg" >
+          <p class="trackTitle">Häschen</p>
+        </div>
+
+        <!--Noiseshit 2
+        <div class="trackWrapper">
+          <audio id="track5">
+            <source src="mp3/track4.mp3" type="audio/mpeg">
+          </audio>
+          <img class="trackImage" src="Images/GR2.jpg" >
+          <p class="trackTitle">Goldenes Rauschen 2</p>
+        </div> -->
+
+        <!--Maikäfer-->
+        <div class="trackWrapper">
+          <audio id="track2">
+            <source src="mp3/Maikäfer.mp3" type="audio/mpeg">
+            <source src="ogg/Maikäfer.ogg" type="audio/ogg">
+              Your browser does not support the audio element.
+          </audio>
+          <img class="trackImage" src="Images/Maikäfer.jpg" >
+          <p class="trackTitle">Maikäfer</p>
+        </div>
+
+        <!--Der Mond-->
+        <div class="trackWrapper">
+          <audio id="track3">
+            <source src="mp3/DerMond.mp3" type="audio/mpeg">
+            <source src="ogg/DerMond.ogg" type="audio/ogg">
+              Your browser does not support the audio element.
+          </audio>
+          <img class="trackImage" src="Images/DerMond.jpg" >
+          <p class="trackTitle">Der Mond</p>
+        </div>
+
+        <!--Outro-->
+        <div class="trackWrapper">
+          <audio id="track4">
+            <source src="mp3/Bossa.mp3" type="audio/mpeg">
+            <source src="ogg/Bossa.ogg" type="audio/ogg">
+              Your browser does not support the audio element.
+          </audio>
+          <img class="trackImage" src="Images/outro.jpg" >
+          <p class="trackTitle">Outro/Bossa</p>
+        </div>
+      </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="controlPageInteraction.js"></script>
+    <script src="snap.js"></script>
+
+  </html>
