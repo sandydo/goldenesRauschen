@@ -59,6 +59,8 @@ function init(){
   },
   false);
 
+
+
 }
 
 
@@ -83,7 +85,7 @@ function updateCurrentTrack(){
 
   // I want on the event ended, that the next track will start! But it doesn't work for some reason.
   // What happens is that the event ended is fired just in the beginnging where the track doesn't even start yet.
-  //currTrack.addEventListener("ended", forwardClicked(), false);
+  currTrack.addEventListener("ended", function() {forwardClicked();}, false);
 }
 
 
