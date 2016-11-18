@@ -215,9 +215,9 @@
           <div><img class="playerButtonGraphic" src="graphics/forward_button03.svg" alt="Selfhtml" draggable="false"/></div>
         </button>
 
-        <button class="music-button" onclick="playPauseClicked();" >
-          <div class="PlayPauseButton" id="playButton"><img class="playerButtonGraphic" src="graphics/play_button03.svg" alt="Selfhtml" draggable="false"/></div>
-          <div class="PlayPauseButton" id="pauseButton" ><img class="playerButtonGraphic" src="graphics/pause_button03.svg" alt="Selfhtml" draggable="false"/></div>
+        <button id="button-play" onclick="playPauseClicked();" >
+          <div id="playButtonImage"><img class="playerButtonGraphic" src="graphics/play_button03.svg" alt="Selfhtml" draggable="false"/></div>
+          <div id="pauseButtonImage" ><img class="playerButtonGraphic" src="graphics/pause_button03.svg" alt="Selfhtml" draggable="false"/></div>
         </button>
 
         <div id="timeline">
@@ -250,9 +250,9 @@
         <!--Alle Vögel-->
         <div class="trackWrapper">
           <audio id="track0">
-            <source src="mp3/AlleVögel.mp3" type="audio/mpeg">
-            <source src="ogg/AlleVögel.ogg" type="audio/ogg">
-              <source src="wav/AlleVögel.wav" type="audio/wav">
+            <source src="ogg/AlleVögel.ogg" type="audio/ogg" />
+            <source src="mp3/AlleVögel.mp3" type="audio/mpeg" />
+            <source src="wav/AlleVögel.wav" type="audio/wav" />
               Your browser does not support the audio element.
           </audio>
           <img class="trackImage" src="Images/AlleVögel.jpg" >

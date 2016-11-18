@@ -211,18 +211,13 @@ button:focus {outline:0;}
 }
 .music-button {
   position: absolute;
+  height: 16vh;
+  width: 16vw;
   background-color: transparent;
   border: none;
   z-index: 2;
 }
 
-.PlayPauseButton {
-  position: absolute;
-  left: 50vw;
-  top: 15px;
-  margin-left: -50px;
-
-}
 
 #button-backward {
   top: 40vh;
@@ -236,6 +231,27 @@ button:focus {outline:0;}
   right: 15px;
 }
 
+#button-play{
+  position: absolute;
+  width: 10vw;
+  height: 10vw;
+  top: 15px;
+  left: 50vw;
+  z-index: 2;
+  background-color: transparent;
+  border: none;
+  margin-left: -5vw;
+}
+
+#playButtonImage {
+  position: absolute;
+  width: 8vw;
+}
+}
+#pauseButtonImage {
+  position: absolute;
+  width: 8vw;
+}
 
 #timeline{
 	width: 70vw;

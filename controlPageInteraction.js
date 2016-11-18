@@ -103,11 +103,11 @@ function showTrackImage(){
 function showPlayPauseButton(){
   // It just controls the visibility of eather the paly or the pause button.
   if (paused) {
-    document.getElementById("playButton").style.visibility = 'visible';
-    document.getElementById("pauseButton").style.visibility = 'hidden';
+    document.getElementById("playButtonImage").style.visibility = 'visible';
+    document.getElementById("pauseButtonImage").style.visibility = 'hidden';
   } else {
-    document.getElementById("playButton").style.visibility = 'hidden';
-    document.getElementById("pauseButton").style.visibility = 'visible';
+    document.getElementById("playButtonImage").style.visibility = 'hidden';
+    document.getElementById("pauseButtonImage").style.visibility = 'visible';
   }
 }
 
@@ -145,6 +145,7 @@ function forwardClicked(){
 }
 
 function playPauseClicked(){
+  
   if (paused) {
     currTrack.play();
     paused = false;
