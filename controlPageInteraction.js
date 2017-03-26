@@ -46,8 +46,6 @@ function init(){
   showPlayPauseButton();
   updateCurrentTrack();
 
-  document.getElementById('temporalContactLayer').style.visibility = 'hidden';
-  document.getElementById('temporalInfoLayer').style.visibility = 'hidden';
   // Event listener:
   playhead.addEventListener("mousedown", function () { playheadDragged = true;}, false );
   document.addEventListener("mousemove", function(event) { if(playheadDragged) {moveplayhead(event);} }, false);
@@ -145,7 +143,7 @@ function forwardClicked(){
 }
 
 function playPauseClicked(){
-  
+
   if (paused) {
     currTrack.play();
     paused = false;
@@ -244,6 +242,11 @@ function menuButtonClicked(){
 
 function makeTempLayerInvisible(id){
   document.getElementById(id).style.visibility = 'hidden';
+}
+
+function changeZIndex(id, index){
+
+  document.getElementById(id).style.zIndex = index;
 }
 
 function openTemporalLaywer(id){
